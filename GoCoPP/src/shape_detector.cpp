@@ -5488,9 +5488,9 @@ void Shape_Detector::detect_planes()
 		planes_2.push_back(plane);
 
 		
-		r = unsigned char(uniform_distribution(generator));
-		g = unsigned char(uniform_distribution(generator));
-		b = unsigned char(uniform_distribution(generator));
+		r = uint8_t(uniform_distribution(generator));
+		g = uint8_t(uniform_distribution(generator));
+		b = uint8_t(uniform_distribution(generator));
 		planes_to_colors.push_back(CGAL::Color(r, g, b));
 
 	}
@@ -6211,9 +6211,9 @@ void Shape_Detector::set_primitives_simple()
 
 
 		Inexact_Plane H = planes_2[u];
-		r = unsigned char(uniform_distribution(generator));
-		g = unsigned char(uniform_distribution(generator));
-		b = unsigned char(uniform_distribution(generator));
+		r = uint8_t(uniform_distribution(generator));
+		g = uint8_t(uniform_distribution(generator));
+		b = uint8_t(uniform_distribution(generator));
 
 		const CGAL::Color & col = (CGAL::Color(r, g, b));
 

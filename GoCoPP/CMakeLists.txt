@@ -42,7 +42,7 @@ if (CGAL_FOUND)
 
 	include(AddFileDependencies)
     add_executable(GoCoPP ${psd_HDRS} ${psd_SRCS})
-	target_link_libraries(GoCoPP ${CGAL_LIBRARIES})
+	target_link_libraries(GoCoPP ${CGAL_LIBRARIES} Boost::filesystem)
 	
 	
 
